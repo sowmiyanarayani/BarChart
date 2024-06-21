@@ -1,9 +1,9 @@
 import { React } from 'react';
 import './App.scss';
-
-const App = () =>
+import DisplayBarGraph from './components/DisplayBarGraph';
+const App = (context) =>
 	<div className="App">
-		Ready to start.
+		<DisplayBarGraph { ...context }/>
 	</div>;
 
 export default App;
