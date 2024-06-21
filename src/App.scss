@@ -1,7 +1,27 @@
 .App {
-	text-align: center;
+	  text-align: center;
+		background-color: #f0f0f0;
+		padding: 20px;
 
 	button {
 		font-weight: bold;
-	}
+	}}
+.chart {
+		margin: 50px auto;
+		max-width: 70%;
+		border: 2px solid rgb(57, 148, 14);
+		border-radius: 5px;
+		padding: 5px;
+}
+.bar {
+		border: 1px solid black;
+		width: 90%;
+		height: 30px;
+}
+.label {
+	  width: 50px;
+		text-align: left;
+    font-style: bold;
+		padding: 10px;
+		font-size: 15px;
 }
