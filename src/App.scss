@@ -3,15 +3,20 @@
 		background-color: #f0f0f0;
 		padding: 20px;
 
+
 	button {
 		font-weight: bold;
 	}}
+.body{
+	display: flex;
+}
 .chart {
 		margin: 50px auto;
 		max-width: 70%;
 		border: 2px solid rgb(57, 148, 14);
 		border-radius: 5px;
 		padding: 5px;
+
 }
 .bar {
 		border: 1px solid black;
