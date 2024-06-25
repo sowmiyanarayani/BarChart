@@ -21,13 +21,6 @@ const config = {
 			passedCount: 100,
 		},
 	],
-	backgroundColor: [
-		'red',
-		'green',
-		'yellow',
-		'blue',
-		'orange',
-	],
 
 };
 

@@ -1,7 +1,7 @@
-/* eslint-disable max-len */
-/* eslint-disable max-lines-per-function */
 import { React } from 'react';
 import RandomManager from '../services/RandomManager';
+import Label from './Label';
+import Bar from './Bar';
 const BarChart = (context) => {
 	const { config: { subjects }} = context;
 	const barColors = ['yellow', 'violet', 'pink', 'green', 'red'];
@@ -13,14 +13,11 @@ const BarChart = (context) => {
 
 	return 		<div className="chart">
 		{ updatedSubjects.map((data, index) =>
-			<div
-				key={ index }
-				style={ { display: 'flex', alignItems: 'center' } }
-			>
-				<div className="label"> { data.subjectName }</div>
-				<div
-					className="bar"
-					style={ { width: `${ data.passedCount }%`, backgroundColor: data.barColor } }
+			<div key={ index } className="body">
+				<Label subjectName={ data.subjectName }/>
+				<Bar
+					passedCount={ data.passedCount }
+					barColor={ data.barColor }
 				/>
 				<div>{ data.passedCount }</div>
 			</div>) }
